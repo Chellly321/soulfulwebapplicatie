@@ -1,0 +1,13 @@
+.slick-carousel {
+    width: 70%;
+}
+
+.slick-carousel div p {
+    margin: auto 1rem auto 2rem;
+}
+
+@media screen and (max-width: 768px) {
+    .slick-carousel {
+        width: 80%;
+    }
+}

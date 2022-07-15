@@ -1,0 +1,30 @@
+.input-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.input-container input {
+    width: 350px;
+    height: 30px;
+    border: none;
+    outline: none;
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+.input-container label {
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 1280px) {
+    .input-container input {
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .input-container input {
+        max-width: 250px;
+    }
+}

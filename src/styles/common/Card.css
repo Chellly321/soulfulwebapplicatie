@@ -1,0 +1,32 @@
+.card {
+    background-color: var(--bg);
+    padding: 1.5rem 0.5rem;
+}
+.card p {
+    text-align: center;
+    padding: 0.5rem 1rem;
+}
+.card button {
+    width: 164px;
+    height: 58px;
+    border: none;
+    outline: none;
+    background-color: var(--primary);
+    display: block;
+    margin: auto;
+    font-size: 1.875rem;
+    font-weight: 300;
+}
+
+@media only screen and (max-width: 768px) {
+    .card {
+        width: 287px;
+        height: 254px;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .card {
+        width: 95%;
+        height: auto;
+    }
+}
