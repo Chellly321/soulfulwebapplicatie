@@ -1,9 +1,10 @@
 import logo from "../assets/images/soulful-logo.svg";
 import accountIcon from "../assets/icons/account-icon.svg";
+import Modal from "../common/Modal";
 
 import {Link, NavLink} from "react-router-dom";
 import { useLocation } from "react-router";
-import { Fragment, useState } from "react";
+import { Fragment, useState, useEffect } from "react";
 
 
 
@@ -11,13 +12,24 @@ const navData = [
     { id: 1, title: "Home", linkTo: "/" },
     { id: 2, title: "Over mij", linkTo: "/about" },
     { id: 3, title: "Contact", linkTo: "/contact" },
-    { id: 4, title: "Cursus", linkTo: "/courses" },
+    { id: 4, title: "Cursus", linkTo: "/cursus" },
 ];
 function Navbar() {
     const [mobileNav, setMobileNav] = useState("0");
     const [modal, setModal] = useState(false);
 
     const location = useLocation()
+
+    useEffect(() => {
+        if (modal) {
+            document.body.style.overflow = "hidden";
+            setMobileNav("0");
+        } else {
+            document.body.style.overflow = "scroll";
+        }
+    }, [modal]);
+
+
 
     const renderList = () => {
         if (location.pathname !== "/dashboard") {
@@ -41,7 +53,7 @@ function Navbar() {
     const renderAccount = () => {
         if (location.pathname === "/dashboard") {
             return (
-                <Link to="/dashboard" className="link-style">
+                <Link to="/account" className="link-style">
                     <div className="nav-container__account">
                         My Account
                         <span>
@@ -62,6 +74,7 @@ function Navbar() {
     };
 
     return (
+        <Fragment>
         <div className="nav-container" >
             <div className="nav-container__logo">
                 <Link to="/">
@@ -86,7 +99,11 @@ function Navbar() {
 
             <div className="account-container">{renderAccount()}</div>
         </div>
+
+            {modal && <Modal onCloseModal={() => setModal(false)} /> }
+        </Fragment>
     );
 }
+
 
 export default Navbar;

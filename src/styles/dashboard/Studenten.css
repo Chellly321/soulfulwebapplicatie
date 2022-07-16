@@ -1,0 +1,25 @@
+.studenten-container {
+    background-color: var(--secondary);
+    margin: 4rem 5rem 5rem 5rem;
+    border-radius: 15px;
+    padding: 2.5rem;
+}
+.studenten-container h1 {
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+.studenten-container h1 span {
+    font-size: 0.75rem;
+    font-weight: 400;
+}
+
+@media only screen and (max-width: 768px) {
+    .studenten-container {
+        margin: 4rem 1rem 5rem 1rem;
+        padding: 0;
+    }
+    .studenten-container h1 {
+        margin-left: 2rem;
+        padding-top: 1rem;
+    }
+}

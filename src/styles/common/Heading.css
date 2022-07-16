@@ -1,0 +1,10 @@
+.heading-container .heading-container__title {
+    height: 6rem;
+    background-color: var(--primary);
+    text-align: center;
+    color: var(--heading);
+    line-height: 6rem;
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin: 0;
+}

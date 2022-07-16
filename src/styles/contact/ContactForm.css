@@ -1,0 +1,109 @@
+.contact-form-container {
+    padding: 1rem;
+}
+.contact-form-container__wrapper {
+    width: 750px;
+}
+.contact-form-container__wrapper h1 {
+    font-weight: 500;
+    color: var(--primary);
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.contact-form-container__input-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0.1rem 2rem;
+}
+
+.contact-form-container__input {
+    width: 320px;
+}
+.form-container__textarea {
+    margin-top: 2rem;
+}
+.form-container__textarea textarea {
+    margin-top: 1rem;
+    width: 695px;
+    height: 200px;
+    border: 3px solid var(--textAreaBorder);
+}
+.form-container__textarea label {
+    font-weight: 500;
+}
+.submit-form-container {
+    align-self: flex-end;
+}
+
+.form-container__btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
+
+.form-container__btn button {
+    width: 150px;
+    height: 40px;
+    margin-right: -1rem;
+    border-radius: 1.5rem;
+    outline: none;
+    background-color: var(--primary);
+
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 2rem;
+}
+@media only screen and (max-width: 768px) {
+    .contact-form-container__wrapper {
+        width: 450px;
+    }
+    .contact-form-container__wrapper h1 {
+        font-weight: 400;
+        font-size: 1.5rem;
+    }
+    .contact-form-container__input {
+        width: 380px;
+    }
+    .form-container__textarea textarea {
+        width: 390px;
+    }
+    .form-container__btn button {
+        margin-right: 1rem;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .contact-form-container {
+        padding: 0;
+        width: 100%;
+        padding-right: 1rem;
+        margin: 2rem 0.1rem;
+    }
+    .contact-form-container__wrapper {
+        width: 100%;
+    }
+    .contact-form-container__wrapper h1 {
+        font-weight: 400;
+        font-size: 1.5rem;
+    }
+    .contact-form-container__input {
+        width: 100%;
+    }
+    .form-container__textarea {
+        width: 100%;
+    }
+    .form-container__textarea textarea {
+        width: 100%;
+        padding: 0.1rem 0.5rem;
+    }
+    .contact-form-container__input-wrapper {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,11 @@
+.graph-container {
+    position: relative;
+    width: auto;
+    height: 60vh;
+}
+
+@media only screen and (max-width: 768px) {
+    .graph-container {
+        height: 60vh;
+    }
+}

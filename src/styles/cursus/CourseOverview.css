@@ -1,0 +1,37 @@
+.course-overview-container {
+    margin-top: 2rem;
+}
+
+.course-overview-container__percentage-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.course-overview-container__percentage {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    width: 70%;
+}
+.course-overview-container__percentage .progress-bar {
+    background-color: var(--progressBar);
+    width: 100%;
+    border-radius: 0.5rem;
+    height: 0.6rem;
+}
+.progress-bar_value {
+    background-color: var(--primary);
+    width: 70%;
+    border-radius: 0.5rem;
+    height: 0.6rem;
+}
+
+@media only screen and (max-width: 480px) {
+    .course-overview-container__percentage {
+        width: 90%;
+    }
+}

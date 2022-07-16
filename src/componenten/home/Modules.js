@@ -43,10 +43,11 @@ const cardData = [
     },
 ];
 
-function Modules() {
+function Modules({ moduleBg, showTitle }) {
     return (
-        <div className="modules-container" id="module-section">
-            <h1>Modules</h1>
+        <div className="modules-container" style={{ backgroundColor: moduleBg }}>
+            {showTitle && <h1>Modules</h1>}
+
             <div className="card-container">
                 {cardData.map((data) => (
                     <Card key={data.id} text={data.text} btnText={data.btnText} />

@@ -5,7 +5,7 @@
 }
 
 .input-container input {
-    width: 350px;
+    width: 95%;
     height: 30px;
     border: none;
     outline: none;
@@ -15,16 +15,6 @@
 
 .input-container label {
     font-weight: 500;
+    margin-top: 1rem;
 }
 
-@media only screen and (max-width: 1280px) {
-    .input-container input {
-        width: 300px;
-    }
-}
-
-@media only screen and (max-width: 480px) {
-    .input-container input {
-        max-width: 250px;
-    }
-}

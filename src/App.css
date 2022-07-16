@@ -9,6 +9,23 @@
 @import url('./styles/home/Contact.css');
 @import url('./styles/common/Input.css');
 @import url('./styles/common/Footer.css');
+@import url('./styles/about/AboutDetail.css');
+@import url('./styles/about/AboutList.css');
+@import url('./styles/about/AboutInfo.css');
+@import url('./styles/contact/ContactDetail.css');
+@import url('./styles/contact/ContactForm.css');
+@import url('./styles/contact/ContactInfo.css');
+@import url('./styles/cursus/CourseOverview.css');
+@import url('./styles/common/Heading.css');
+@import url('./styles/auth/Auth.css');
+@import url('./styles/common/Modal.css');
+@import url('./styles/common/Graph.css');
+@import url('./styles/dashboard/Balance.css');
+@import url('./styles/dashboard/Studenten.css');
+@import url('./styles/account/Theory.css');
+@import url('./styles/account/SelectedModule.css');
+@import url('./styles/account/VideoContent.css');
+@import url('./styles/account/Profile.css');
 
 :root {
     --primary: #d8ab7e;
@@ -22,4 +39,11 @@
     --sectionBg: #faf2e9;
     --dashboard: #f6e9dc;
     --dashboard-heading: #a098ae;
+    --authBtn: #9e6927;
+    --authBorder: #b9926b;
+    --modalBg: #ffddbb;
+    --textAreaBorder: #b08050;
+    --progressBar: #f5f5f5;
+    --theoryBg: #e2dcd6;
+    --selectedModule: #d9d9d9;
 }

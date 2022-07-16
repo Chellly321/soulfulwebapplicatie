@@ -1,0 +1,10 @@
+.about-detail-container {
+    margin-top: 9rem;
+}
+.about-detail-container h1 {
+    border-bottom: 3px solid var(--primary);
+    width: 190px;
+    margin: auto;
+    display: block;
+    color: var(--primary);
+}

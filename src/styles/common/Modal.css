@@ -1,0 +1,73 @@
+.modal {
+    padding: 3rem;
+    position: fixed;
+    top: 40px;
+    width: 430px;
+    right: 0;
+    left: 0;
+    background-color: var(--modalBg);
+    border: 1px solid #ddd;
+    box-shadow: 0 5px 20px 2px var(--border);
+    z-index: 10;
+    margin: auto;
+    display: block;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 500px;
+}
+
+.modal__content {
+    z-index: 2;
+    position: relative;
+    overflow: auto;
+}
+.modal-container {
+    position: relative;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.modal-container:after {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    content: "";
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn-container button {
+    width: 210px;
+    height: 50px;
+    border-radius: 5px;
+    outline: none;
+    background-color: var(--btnText);
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: var(--authBtn);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    .modal {
+        width: 350px;
+        padding: 3rem 2rem;
+    }
+    .btn-container {
+        gap: 0.3rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .modal {
+        width: 250px;
+        width: 80%;
+    }
+}

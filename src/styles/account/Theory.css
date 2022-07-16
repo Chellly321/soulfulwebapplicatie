@@ -1,0 +1,43 @@
+.theory-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+.theory-container__content {
+    width: 85%;
+    background-color: var(--theoryBg);
+    text-align: center;
+    height: 250px;
+}
+
+.theory-container__content h1 {
+    background-color: var(--primary);
+    margin-top: 0;
+    font-size: 1.8rem;
+    font-weight: 300;
+    padding: 0.5rem;
+}
+
+.theory-container__content p {
+    margin: auto 5rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .theory-container__content {
+        width: 90%;
+    }
+    .theory-container__content p {
+        margin: auto 2rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .theory-container__content {
+        width: 95%;
+    }
+    .theory-container__content p {
+        margin: auto 1rem;
+    }
+}

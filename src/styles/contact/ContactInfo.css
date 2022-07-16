@@ -1,0 +1,27 @@
+.contact-info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.contact-info-container p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-top: 0.5rem;
+}
+.contact-info-container__img {
+    width: 420px;
+    height: 545px;
+}
+@media only screen and (max-width: 1280px) {
+    .contact-info-container {
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .contact-info-container__img {
+        width: 100%;
+        height: 500px;
+    }
+}

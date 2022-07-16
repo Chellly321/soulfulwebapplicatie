@@ -13,11 +13,10 @@ function Home() {
             <Navbar />
             <Header />
             <Testimonial />
-            <Modules />
+            <Modules showTitle={true} />
             <About />
             <Contact />
             <Footer />
-
         </Fragment>
     );
 }
