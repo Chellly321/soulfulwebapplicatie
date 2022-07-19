@@ -6,6 +6,7 @@ function Input({
                    lableText,
                    inputName,
                    borderColor,
+                   inputDefaultValue,
                }) {
     return (
         <div className="input-container">
@@ -17,6 +18,7 @@ function Input({
                 value={inputValue}
                 onChange={onInputChange}
                 name={inputName}
+                defaultValue={inputDefaultValue}
             />
         </div>
     );

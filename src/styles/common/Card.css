@@ -17,6 +17,12 @@
     font-size: 1.875rem;
     font-weight: 300;
 }
+.card:hover {
+    border: 5px solid var(--heading) !important;
+    transition: 0.1s ease-in;
+    padding: 1.38rem 0.5rem;
+    cursor: pointer;
+}
 
 @media only screen and (max-width: 768px) {
     .card {

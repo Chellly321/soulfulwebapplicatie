@@ -1,11 +1,16 @@
 import Input from "../common/Input";
 import { useState } from "react";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 
 function Signup({ onCancelAuth }) {
+    const [startDate, setStartDate] = useState(new Date());
+
     const [inputValues, setInputValues] = useState({
         name: "",
         email: "",
         password: "",
+        dateOfBirth:"",
     });
 
     const onChangeHandler = (e) => {
@@ -48,6 +53,13 @@ function Signup({ onCancelAuth }) {
                         onInputChange={onChangeHandler}
                     />
                 </div>
+                <div className="date-picker-wrapper" >
+                    <label htmlFor="">Date of Birth:</label>
+                <DatePicker
+                    selected={startDate}
+                    onChange={(date) => setStartDate(date)}
+                />
+            </div>
             </div>
             <div className="checkbox-container">
                 <div className="checkbox-container__input-wrapper">

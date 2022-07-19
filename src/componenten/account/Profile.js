@@ -1,18 +1,23 @@
 import pic from "../../assets/images/picture.png";
-// import Modal from "../../common/Modal";
-// import ModalEditAccount from "../../common/ModalEditAccount";
-// import {useEffect, useState} from "react";
+import Modal from "../../common/Modal";
+import {useState} from "react";
+
+const editValues = {
+    id:1,
+    name: 'romi',
+    email:'michelle.royer@icloud.com',
+    password:"12345678",
+    file:"",
+};
+
 
 function Profile() {
-    // const [modalEditAccount, setModalEditAccount] = useState(false);
 
-    // useEffect(() => {
-    //     if (modalEditAccount) {
-    //         document.body.style.overflow = "hidden";
-    //     } else {
-    //         document.body.style.overflow = "scroll";
-    //     }
-    // }, [modalEditAccount]);
+    const [editMode, setEditMode] = useState(false)
+
+    const CloseEditModalHandler = () => {
+        setEditMode(false);
+    }
 
     return (
         <>
@@ -24,13 +29,15 @@ function Profile() {
                 <h1>Welkom en succes met de cursus Gytha! </h1>
             </div>
             <div className="profile-container__user-credentials">
-                <p>Naam: Gytha Brooks</p>
-                <p>Date of birth: 25/05/1997</p>
-                <p>Email: g.brooks@gmail.com</p>
-                <button className="edit-btn">Edit</button>
+                <p>Name: {editValues.name}</p>
+                <p>Email: {editValues.email}</p>
+                <button className="edit-btn"
+                onClick={() => setEditMode(true)}>
+                    Edit
+                </button>
             </div>
         </div>
-            {/*{modalEditAccount && <ModalEditAccount onCancelEdit={() => setModalEditAccount(false)} /> }*/}
+            {editMode && <Modal editAccount={editMode} onCloseModal={CloseEditModalHandler} userValues={editValues}/>}
         </>
     );
 }

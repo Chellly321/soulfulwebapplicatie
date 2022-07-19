@@ -7,6 +7,11 @@ import Contact from "./pages/Contact";
 import Cursus from "./pages/Cursus";
 import Dashboard from "./pages/Dashboard";
 import Account from "./pages/Account";
+import Admin from "./pages/Admin";
+import ScrollToTop from "./helper/scrollToTop";
+import CourseDetail from "./pages/CourseDetail";
+import PageNotFound from "./pages/404";
+
 
 
 function App() {
@@ -19,9 +24,12 @@ function App() {
             <Route exact path="/cursus" component={Cursus} />
             <Route exact path="/dashboard" component={Dashboard} />
             <Route exact path="/account" component={Account} />
+            <Route exact path="/admin" component={Admin} />
+            <Route exact path="/course/:id" component={CourseDetail} />
 
-
+            <Route component={PageNotFound} />
         </Switch>
+        <ScrollToTop />
     </BrowserRouter>
   );
 }

@@ -75,6 +75,22 @@
     text-align: justify;
     margin: 4rem 1rem 2rem 1rem;
 }
+.date-picker-wrapper {
+    width: 419px;
+    margin-top: 2rem;
+}
+.date-picker-wrapper input {
+    width: calc(100% - 1rem);
+    height: 25px;
+    margin-top: 1rem;
+    padding: 1rem;
+    outline: 0;
+    border: none;
+}
+.date-picker-wrapper label {
+    font-size: 1rem;
+    font-weight: 500;
+}
 
 @media only screen and (max-width: 768px) {
     .auth-container__input {
@@ -82,6 +98,9 @@
     }
     .auth-btn-group {
         gap: 0.3rem;
+    }
+    .date-picker-wrapper {
+        width: 90%;
     }
 }
 
